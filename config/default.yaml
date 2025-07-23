@@ -1,1 +1,11 @@
- 
+paths:
+  raw_data: data/raw/dataset.csv
+  model_file: models/latest_model.joblib
+ECHO is on.
+target: price
+numeric_features: [year, mileage]
+categorical_features: [make, model]
+ECHO is on.
+split:
+  test_size: 0.2
+  random_state: 42
