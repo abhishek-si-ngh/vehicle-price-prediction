@@ -1,0 +1,17 @@
+paths:
+  raw_data: src/data/raw/dataset.csv
+  model_file: models/latest_model.joblib
+
+target: price
+
+numeric_features:
+  - year
+  - mileage
+
+categorical_features:
+  - make
+  - model
+
+split:
+  test_size: 0.2
+  random_state: 42

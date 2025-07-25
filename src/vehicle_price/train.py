@@ -5,13 +5,16 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error
 
-from .config import load_config
-from .data import load_raw_data
-from .features import split_data, build_preprocessor
+from config.config import load_config
+from data.data import load_raw_data
+from src.vehicle_price.features import split_data, build_preprocessor
+
 
 def train_main():
     cfg = load_config()
     df = load_raw_data()
+
+    df = df.dropna(subset=[cfg["target"]])
 
     train_df, test_df = split_data(df)
     X_train = train_df[cfg["numeric_features"] + cfg["categorical_features"]]
