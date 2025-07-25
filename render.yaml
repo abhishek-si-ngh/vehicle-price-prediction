@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vehicle-price-predictor
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port=$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: PYTHONPATH
+        value: src
