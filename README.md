@@ -97,21 +97,11 @@ Then go to [http://localhost:8501](http://localhost:8501)
 
 ## 🌐 Live Demo
 
-🔗 **Deployed on Render**: [https://your-render-app-url.com](https://your-render-app-url.com)
+🔗 **Deployed on Render**: [https://vehicle-price-prediction-6nxr.onrender.com](https://vehicle-price-prediction-6nxr.onrender.com)
 
-> Replace the above with your actual deployed URL.
-
----
-
-## 📸 App Preview
-
-> *(Optional)* Add a screenshot here by uploading an image and linking it like this:
-
-```markdown
-![App Screenshot](screenshot.png)
-```
 
 ---
+
 
 ## 🤝 Contributing
 
